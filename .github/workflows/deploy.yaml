@@ -7,7 +7,7 @@ on:
 
 env:
   S3_BUCKET_NAME: raontech
-  RESOURCE_PATH: ./src/main/resources/application.yaml
+  RESOURCE_PATH: ./src/main/resources/application.properties
   CODE_DEPLOY_APPLICATION_NAME: raontech-code-deploy
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: raontech-server
 
