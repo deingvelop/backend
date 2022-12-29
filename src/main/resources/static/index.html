@@ -23,18 +23,55 @@
             </a>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-<!--                <li><a href="#" class="nav-link px-2 link-secondary" >홈</a></li>-->
-                <li><a href="#" class="nav-link px-2 link-dark">회사소개</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">프로젝트</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">의뢰하기</a></li>
+                <li><a href="index.html" class="nav-link px-2 link-secondary" >홈</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark" data-bs-toggle="modal" data-bs-target="#functionPreparingModal">회사소개</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark" data-bs-toggle="modal" data-bs-target="#functionPreparingModal">프로젝트</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark" data-bs-toggle="modal" data-bs-target="#functionPreparingModal">의뢰하기</a></li>
 <!--                <li><a href="#" class="nav-link px-2 link-dark"></a></li>-->
             </ul>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">로그인</button>
-                <button type="button" class="btn btn-primary">회원가입</button>
+                <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#memberPreparingModal">로그인</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#memberPreparingModal">회원가입</button>
             </div>
         </header>
+    </div>
+
+    <!--  Modal  -->
+    <!--  회원 기능 준비중 Modal  -->
+    <div class="modal fade" id="memberPreparingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">준비중입니다.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    로그인/회원가입 기능은 차후 서비스될 예정입니다.
+                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!--  준비중 Modal  -->
+    <div class="modal fade" id="functionPreparingModal" tabindex="-1" aria-labelledby="functionPreparingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="functionPreparingModalLabel">준비중입니다.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    해당 기능은 차후 서비스될 예정입니다.
+                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+            </div>
+        </div>
     </div>
 
 <!--    &lt;!&ndash;  임시 이미지(페이지 준비중입니다.) &ndash;&gt;-->
