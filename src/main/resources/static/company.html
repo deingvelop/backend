@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  bootstrap 관련 설정  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>라온테크</title>
+</head>
+
+<body>
+    <!--  bootstrap 관련 설정  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!--  헤더(네비게이션 바)  -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a class="navbar-brand" href="#">
+                <img src="로고+회사이름_컬러.png" width="285" height="80">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="index.html" class="nav-link px-4 link-secondary" style="font-size: larger"><b>홈</b></a></li>
+                <li><a href="./company.html" class="nav-link px-4 link-secondary" style="font-size: larger" data-bs-toggle="modal"><b>회사소개</b></a></li>
+                <li><a href="#" class="nav-link px-4 link-secondary" style="font-size: larger" data-bs-toggle="modal" data-bs-target="#functionPreparingModal"><b>프로젝트</b></a></li>
+                <li><a href="#" class="nav-link px-4 link-secondary" style="font-size: larger" data-bs-toggle="modal" data-bs-target="#functionPreparingModal"><b>의뢰하기</b></a></li>
+<!--                <li><a href="#" class="nav-link px-2 link-dark"></a></li>-->
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#memberPreparingModal"><b>로그인</b></button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#memberPreparingModal"><b>회원가입</b></button>
+            </div>
+        </header>
+    </div>
+
+    <!--  Modal  -->
+    <!--  회원 기능 준비중 Modal  -->
+    <div class="modal fade" id="memberPreparingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">준비중입니다.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    로그인/회원가입 기능은 차후 서비스될 예정입니다.
+                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!--  준비중 Modal  -->
+    <div class="modal fade" id="functionPreparingModal" tabindex="-1" aria-labelledby="functionPreparingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="functionPreparingModalLabel">준비중입니다.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    해당 기능은 차후 서비스될 예정입니다.
+                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+<!--    &lt;!&ndash;  임시 이미지(페이지 준비중입니다.) &ndash;&gt;-->
+<!--    <div style="text-align: center">-->
+<!--        <img src="http://obea.or.kr/images/ready_con.png">-->
+<!--    </div>-->
+
+    <!--  라온테크 소개 이미지 -->
+    <div style="text-align: center">
+        <img src="라온테크_cto_message_new.png" width="68%">
+        <br><br>
+    </div>
+
+</body>
+
+</html>
