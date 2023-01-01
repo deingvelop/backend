@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  bootstrap 관련 설정  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--  og 설정  -->
+    <!-- 페이지의 표준 URL -->
+    <meta property="og:url" content="http://www.raontech.site" />
+
+    <!-- 콘텐츠의 미디어 유형(기본값은 website) -->
+    <meta property="og:type" content="website" />
+
+    <!-- 기사의 제목 -->
+    <meta property="og:title" content="라온테크 | RAON TECH" />
+
+    <!-- 콘텐츠의 간단한 설명 -->
+    <meta property="og:description" content="시스템 소프트웨어 연구/개발을 이끌어가는 라온테크입니다." />
+
+    <!-- 표시되는 이미지의 URL -->
+    <meta property="og:image" content="로고_컬러.jpg" />
+
+    <title>라온테크</title>
+    <link rel="shortcut icon" type="image/x-icon" href="웹페이지_아이콘.png"></head>
+
+<body>
+    <!--  bootstrap 관련 설정  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!--  헤더(네비게이션 바)  -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <img src="로고+회사이름_컬러.png" width="285" height="80">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="index.html" class="nav-link px-4 link-secondary" style="font-size: larger"><b>홈</b></a></li>
+                <li><a href="./company.html" class="nav-link px-4 link-dark" style="font-size: larger"><b>회사소개</b></a></li>
+                <li><a href="./project.html" class="nav-link px-4 link-secondary" style="font-size: larger"><b>프로젝트</b></a></li>
+                <li><a href="#" class="nav-link px-4 link-secondary" style="font-size: larger" data-bs-toggle="modal" data-bs-target="#functionPreparingModal"><b>의뢰하기</b></a></li>
+<!--                <li><a href="#" class="nav-link px-2 link-dark"></a></li>-->
+            </ul>
+
+            <div class="col-md-3 text-end">
+<!--                <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#memberPreparingModal"><b>로그인</b></button>-->
+<!--                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#memberPreparingModal"><b>회원가입</b></button>-->
+            </div>
+        </header>
+    </div>
+
+    <!--  Modal  -->
+    <!--  회원 기능 준비중 Modal  -->
+    <div class="modal fade" id="memberPreparingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">준비중입니다.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    로그인/회원가입 기능은 차후 서비스될 예정입니다.
+                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!--  준비중 Modal  -->
+    <div class="modal fade" id="functionPreparingModal" tabindex="-1" aria-labelledby="functionPreparingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="functionPreparingModalLabel">준비중입니다.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    해당 기능은 차후 서비스될 예정입니다.
+                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+<!--    &lt;!&ndash;  임시 이미지(페이지 준비중입니다.) &ndash;&gt;-->
+<!--    <div style="text-align: center">-->
+<!--        <img src="http://obea.or.kr/images/ready_con.png">-->
+<!--    </div>-->
+
+    <!--  라온테크 소개 이미지 -->
+    <div style="text-align: center">
+        <img src="라온테크_cto_message_new.png" width="68%">
+        <br><br>
+    </div>
+
+    <!--  footer  -->
+    <div class="container border-top">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3" style="width: 650px;">
+                    <h6><b>라온테크</b></h6>
+                    <br>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">대표자: 대표자: 송치영  사업자등록번호: 402-31-04884</li>
+                        <li class="nav-item mb-2">주소: 충남 천안시 서북구 백석공단1로 10  천안미래에이스하이테크시티 215호</li>
+                        <li class="nav-item mb-2">대표번호: 041-906-5800  FAX: 041-906-5900</li>
+                        <li class="nav-item mb-2"></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3" style="width: 200px;">
+                    <h6><b>바로가기</b></h6>
+                    <br>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">홈</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">회사 소개</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">프로젝트</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">문의하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3" style="width: 300px;">
+                    <form>
+                        <h5><b>빠른 문의 남기기</b></h5>
+                        <p>성함, 이메일, 간단한 문의 내용을 남겨주시면 답신드리겠습니다.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="customerName" class="visually-hidden">성함</label>
+                            <input id="customerName" type="text" class="form-control" placeholder="성함">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="customerEmailAddress" class="visually-hidden">이메일 주소</label>
+                            <input id="customerEmailAddress" type="text" class="form-control" placeholder="이메일 주소">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="customerSentence" class="visually-hidden">문의 내용</label>
+                            <input id="customerSentence" type="text" class="form-control" placeholder="문의 내용">
+                        </div>
+                        <div style="text-align: right; padding-right: 10px">
+                            <button class="btn btn-primary" type="button">등록</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

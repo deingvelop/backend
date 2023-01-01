@@ -3,13 +3,318 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  bootstrap 관련 설정  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--  og 설정  -->
+    <!-- 페이지의 표준 URL -->
+    <meta property="og:url" content="http://www.raontech.site" />
+
+    <!-- 콘텐츠의 미디어 유형(기본값은 website) -->
+    <meta property="og:type" content="website" />
+
+    <!-- 기사의 제목 -->
+    <meta property="og:title" content="라온테크 | RAON TECH" />
+
+    <!-- 콘텐츠의 간단한 설명 -->
+    <meta property="og:description" content="시스템 소프트웨어 연구/개발을 이끌어가는 라온테크입니다." />
+
+    <!-- 표시되는 이미지의 URL -->
+    <meta property="og:image" content="로고_컬러.jpg" />
+
     <title>라온테크</title>
+    <link rel="shortcut icon" type="image/x-icon" href="웹페이지_아이콘.png">
 </head>
 
 <body>
-<div style="text-align: center">
-    <img src="http://obea.or.kr/images/ready_con.png">
-</div>
+    <!--  bootstrap 관련 설정  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!--  헤더(네비게이션 바)  -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <img src="로고+회사이름_컬러.png" width="285" height="80">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="index.html" class="nav-link px-4 link-secondary" style="font-size: larger"><b>홈</b></a></li>
+                <li><a href="./company.html" class="nav-link px-4 link-secondary" style="font-size: larger"><b>회사소개</b></a></li>
+                <li><a href="./project.html" class="nav-link px-4 link-secondary" style="font-size: larger"><b>프로젝트</b></a></li>
+                <li><a href="#" class="nav-link px-4 link-secondary" style="font-size: larger" data-bs-toggle="modal" data-bs-target="#functionPreparingModal"><b>의뢰하기</b></a></li>
+<!--                <li><a href="#" class="nav-link px-2 link-dark"></a></li>-->
+            </ul>
+
+            <div class="col-md-3 text-end">
+<!--                <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#memberPreparingModal"><b>로그인</b></button>-->
+<!--                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#memberPreparingModal"><b>회원가입</b></button>-->
+            </div>
+        </header>
+    </div>
+
+    <!--  Modal  -->
+    <!--  회원 기능 준비중 Modal  -->
+    <div class="modal fade" id="memberPreparingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">준비중입니다.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    로그인/회원가입 기능은 차후 서비스될 예정입니다.
+                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!--  준비중 Modal  -->
+    <div class="modal fade" id="functionPreparingModal" tabindex="-1" aria-labelledby="functionPreparingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="functionPreparingModalLabel">준비중입니다.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    해당 기능은 차후 서비스될 예정입니다.
+                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+<!--    &lt;!&ndash;  임시 이미지(페이지 준비중입니다.) &ndash;&gt;-->
+<!--    <div style="text-align: center">-->
+<!--        <img src="http://obea.or.kr/images/ready_con.png">-->
+<!--    </div>-->
+
+    <!--  라온테크 소개 이미지 -->
+    <div style="text-align: center">
+        <img src="라온테크_대표이미지_화이트_short.png" width="68%">
+        <img src="라온테크_대표message_아래여백제거.png" width="68%">
+        <br><br><br><br><br>
+    </div>
+
+    <!--  부트스트랩 아이콘  -->
+<!--    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">-->
+<!--        <symbol id="cpu-fill" viewBox="0 0 16 16">-->
+<!--            <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>-->
+<!--            <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"/>-->
+<!--        </symbol>-->
+<!--        <symbol id="toggles2" viewBox="0 0 16 16">-->
+<!--            <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>-->
+<!--            <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"/>-->
+<!--            <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>-->
+<!--        </symbol>-->
+<!--        <symbol id="tools" viewBox="0 0 16 16">-->
+<!--            <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>-->
+<!--        </symbol>-->
+<!--    </svg>-->
+
+    <!--  회사 직무 소개 ver.1  -->
+<!--    <div class="container px-4 py-5" id="hanging-icons">-->
+<!--        <h2 class="pb-2 border-bottom"><b>회사 직무 소개</b></h2>-->
+<!--        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">-->
+<!--            <div class="col d-flex align-items-start">-->
+<!--                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">-->
+<!--                    <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <h4 class="fs-2">시스템 소프트웨어</h4>-->
+<!--                    <p>업무 상세 소개 글이 들어갈 자리! 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</p>-->
+<!--&lt;!&ndash;                    <a href="#" class="btn btn-primary">&ndash;&gt;-->
+<!--&lt;!&ndash;                        Primary button&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col d-flex align-items-start">-->
+<!--                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">-->
+<!--                    <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <h3 class="fs-2">전자제품 하드웨어</h3>-->
+<!--                    <p>업무 상세 소개 글이 들어갈 자리! 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col d-flex align-items-start">-->
+<!--                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">-->
+<!--                    <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <h3 class="fs-2">또 다른 기능</h3>-->
+<!--                    <p>업무 상세 소개 글이 들어갈 자리! 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash;  회사 직무 소개 ver.2  &ndash;&gt;-->
+<!--    <div class="container px-4 py-5" id="featured-3">-->
+<!--        <h2 class="pb-2 border-bottom"><b>회사 직무 소개</b></h2>-->
+<!--        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">-->
+<!--            <div class="feature col">-->
+<!--                <h3 class="fs-2">시스템 소프트웨어</h3>-->
+<!--                <p>업무 상세 소개 글이 들어갈 자리! 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</p>-->
+<!--            </div>-->
+<!--            <div class="feature col">-->
+<!--                <h3 class="fs-2">전자제품 하드웨어</h3>-->
+<!--                <p>업무 상세 소개 글이 들어갈 자리! 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</p>-->
+<!--            </div>-->
+<!--            <div class="feature col">-->
+<!--                <h3 class="fs-2">또 다른 업무 분야</h3>-->
+<!--                <p>업무 상세 소개 글이 들어갈 자리! 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash;  회사 직무 소개 ver.3  &ndash;&gt;-->
+<!--    <div class="container marketing">-->
+<!--        <hr class="featurette-divider">-->
+
+<!--        <div class="row featurette">-->
+<!--            <div class="col-md-7">-->
+<!--&lt;!&ndash;                <h2 class="featurette-heading fw-normal lh-1">시스템 소프트웨어<span class="text-muted">It’ll blow your mind.</span></h2>&ndash;&gt;-->
+<!--                <h2 class="featurette-heading fw-normal lh-1">시스템 소프트웨어</h2>-->
+<!--                <p class="follow">업무 상세 소개 글이 들어갈 자리!</p>-->
+<!--            </div>-->
+<!--            <div class="col-md-5">-->
+<!--&lt;!&ndash;                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>&ndash;&gt;-->
+<!--&lt;!&ndash;                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="sw.jpg"></svg>&ndash;&gt;-->
+<!--                <img src="sw.jpg" width="400" height="300">-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr class="featurette-divider">-->
+
+<!--        <div class="row featurette">-->
+<!--            <div class="col-md-7 order-md-2">-->
+<!--&lt;!&ndash;                <h4 class="featurette-heading fw-normal lh-1"><b>전자제품 하드웨어</b><span class="text-muted">See for yourself.</span></h4>&ndash;&gt;-->
+<!--                <h2 class="featurette-heading fw-normal lh-1">전자제품 하드웨어</h2>-->
+<!--                <p class="follow">업무 상세 소개 글이 들어갈 자리!</p>-->
+<!--            </div>-->
+<!--            <div class="col-md-5 order-md-1">-->
+<!--                <img src="hw.jpg" width="400" height="300">-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr class="featurette-divider">-->
+
+<!--        <div class="row featurette">-->
+<!--            <div class="col-md-7">-->
+<!--                <h2 class="featurette-heading fw-normal lh-1">세 번째 업무 분야</h2>-->
+<!--                <p class="follow">업무 상세 소개 글이 들어갈 자리!</p>-->
+<!--            </div>-->
+<!--            <div class="col-md-5">-->
+<!--                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr class="featurette-divider">-->
+
+<!--    </div>&lt;!&ndash; /.container &ndash;&gt;-->
+
+    <!--  회사 직무 소개 ver.4  -->
+    <div class="container marketing"  style="text-align: center">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="sw.png" height="160" width="160">
+                <br><br>
+                <h2 class="fw-normal">시스템 소프트웨어</h2>
+                <p>업무 상세 소개 업무 가나다라마바사 아자차카타파하</p>
+                <p><a class="btn btn-secondary" href="#">자세히 보기 &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <br><br>
+            <div class="col-lg-4">
+                <img src="hw.png" height="160" width="160">
+                <br><br>
+                <h2 class="fw-normal">전자제품 하드웨어</h2>
+                <p>업무 상세 소개 업무 가나다라마바사 아자차카타파하</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <br><br>
+            <div class="col-lg-4">
+                <img src="etc.png" height="160" width="160">
+                <br><br>
+                <h2 class="fw-normal">세 번째 업무 분야</h2>
+                <p>업무 상세 소개 업무 가나다라마바사 아자차카타파하</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <!--  footer  -->
+    <div class="container border-top">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3" style="width: 650px;">
+                    <h6><b>라온테크</b></h6>
+                    <br>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">대표자: 대표자: 송치영  사업자등록번호: 402-31-04884</li>
+                        <li class="nav-item mb-2">주소: 충남 천안시 서북구 백석공단1로 10  천안미래에이스하이테크시티 215호</li>
+                        <li class="nav-item mb-2">대표번호: 041-906-5800  FAX: 041-906-5900</li>
+                        <li class="nav-item mb-2"></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3" style="width: 200px;">
+                    <h6><b>바로가기</b></h6>
+                    <br>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">홈</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">회사 소개</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">프로젝트</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">문의하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3" style="width: 300px;">
+                    <form>
+                        <h5><b>빠른 문의 남기기</b></h5>
+                        <p>성함, 이메일, 간단한 문의 내용을 남겨주시면 답신드리겠습니다.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="customerName" class="visually-hidden">성함</label>
+                            <input id="customerName" type="text" class="form-control" placeholder="성함">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="customerEmailAddress" class="visually-hidden">이메일 주소</label>
+                            <input id="customerEmailAddress" type="text" class="form-control" placeholder="이메일 주소">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="customerSentence" class="visually-hidden">문의 내용</label>
+                            <input id="customerSentence" type="text" class="form-control" placeholder="문의 내용">
+                        </div>
+                        <div style="text-align: right; padding-right: 10px">
+                            <button class="btn btn-primary" type="button">등록</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
 </body>
 
 </html>
