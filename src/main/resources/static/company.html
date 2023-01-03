@@ -102,24 +102,26 @@
         <br><br>
     </div>
 
+    <br><br><br><br><br><br><br><br>
+
+
     <!--  footer  -->
     <div class="container border-top">
         <footer class="py-5">
             <div class="row">
-                <div class="col-6 col-md-2 mb-3" style="width: 650px;">
+                <div class="col-6 col-md-2 mb-3" style="width: 700px;">
                     <h6><b>라온테크</b></h6>
-                    <br>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2">대표자: 대표자: 송치영  사업자등록번호: 402-31-04884</li>
-                        <li class="nav-item mb-2">주소: 충남 천안시 서북구 백석공단1로 10  천안미래에이스하이테크시티 215호</li>
-                        <li class="nav-item mb-2">대표번호: 041-906-5800  FAX: 041-906-5900</li>
+                        <li class="nav-item mb-2">대표자: 송치영 사업자등록번호: 402-31-04884</li>
+                        <li class="nav-item mb-2">대표번호: 041-906-5800 FAX: 041-906-5900</li>
+                        <li class="nav-item mb-2">주소: 충남 천안시 서북구 백석공단1로 10 (천안미래에이스하이테크시티) 215호</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="회사_위치_확장.png" width="530"></li>
                         <li class="nav-item mb-2"></li>
                     </ul>
                 </div>
 
-                <div class="col-6 col-md-2 mb-3" style="width: 200px;">
+                <div class="col-6 col-md-2 mb-3" style="width: 150px;">
                     <h6><b>바로가기</b></h6>
-                    <br>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">홈</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">회사 소개</a></li>
@@ -129,35 +131,159 @@
                 </div>
 
                 <div class="col-md-5 offset-md-1 mb-3" style="width: 300px;">
-                    <form>
-                        <h5><b>빠른 문의 남기기</b></h5>
-                        <p>성함, 이메일, 간단한 문의 내용을 남겨주시면 답신드리겠습니다.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="customerName" class="visually-hidden">성함</label>
-                            <input id="customerName" type="text" class="form-control" placeholder="성함">
+                    <!-- <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
+                    <h6><b>빠른 문의 남기기</b></h6>
+                    <p>성함, 이메일, 간단한 문의 내용을 남겨주시면 답신드리겠습니다.</p>
+                    <form id="emailForm" class="gform" method="POST" data-email="scy@raontech.site"
+                          action="https://script.google.com/macros/s/AKfycbwWqadHLXxJIBMfPRz7ARljHzn6OZ-kudsCqprWxQlAUDofJ0F0tT9PJwquCrIQIK598w/exec">
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="문의 고객 성함"
+                                                   name="문의 고객 성함" placeholder="성함" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="문의 고객 이메일"
+                                                   name="문의 고객 이메일" placeholder="이메일 주소" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="문의 내용" name="문의 내용" rows="5" placeholder="문의 내용" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+                                    (function () {
+                                        // get all data in form and return object
+                                        function getFormData(form) {
+                                            var elements = form.elements;
+                                            var honeypot;
+
+                                            var fields = Object.keys(elements).filter(function (k) {
+                                                if (elements[k].name === "honeypot") {
+                                                    honeypot = elements[k].value;
+                                                    return false;
+                                                }
+                                                return true;
+                                            }).map(function (k) {
+                                                if (elements[k].name !== undefined) {
+                                                    return elements[k].name;
+                                                    // special case for Edge's html collection
+                                                } else if (elements[k].length > 0) {
+                                                    return elements[k].item(0).name;
+                                                }
+                                            }).filter(function (item, pos, self) {
+                                                return self.indexOf(item) == pos && item;
+                                            });
+
+                                            var formData = {};
+                                            fields.forEach(function (name) {
+                                                var element = elements[name];
+
+                                                // singular form elements just have one value
+                                                formData[name] = element.value;
+
+                                                // when our element has multiple items, get their values
+                                                if (element.length) {
+                                                    var data = [];
+                                                    for (var i = 0; i < element.length; i++) {
+                                                        var item = element.item(i);
+                                                        if (item.checked || item.selected) {
+                                                            data.push(item.value);
+                                                        }
+                                                    }
+                                                    formData[name] = data.join(', ');
+                                                }
+                                            });
+
+                                            // add form-specific values into the data
+                                            formData.formDataNameOrder = JSON.stringify(fields);
+                                            formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+                                            formData.formGoogleSendEmail
+                                                = form.dataset.email || ""; // no email by default
+
+                                            return {data: formData, honeypot: honeypot};
+                                        }
+
+                                        function handleFormSubmit(event) {  // handles form submit without any jquery
+                                            event.preventDefault();           // we are submitting via xhr below
+                                            var form = event.target;
+                                            var formData = getFormData(form);
+                                            var data = formData.data;
+
+                                            // If a honeypot field is filled, assume it was done so by a spam bot.
+                                            if (formData.honeypot) {
+                                                return false;
+                                            }
+
+                                            disableAllButtons(form);
+                                            var url = form.action;
+                                            var xhr = new XMLHttpRequest();
+                                            xhr.open('POST', url);
+                                            // xhr.withCredentials = true;
+                                            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                                            xhr.onreadystatechange = function () {
+                                                if (xhr.readyState === 4 && xhr.status === 200) {
+                                                    form.reset();
+                                                    var formElements = form.querySelector(".form-elements")
+                                                    if (formElements) {
+                                                        formElements.style.display = "none"; // hide form
+                                                    }
+                                                    var thankYouMessage = form.querySelector(".thankyou_message");
+                                                    if (thankYouMessage) {
+                                                        thankYouMessage.style.display = "block";
+                                                        alert("메일 전송에 성공했습니다. 확인 후 회신드리겠습니다.");
+                                                    }
+                                                }
+                                            };
+                                            // url encode form data for sending as post data
+                                            var encoded = Object.keys(data).map(function (k) {
+                                                return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                                            }).join('&');
+                                            xhr.send(encoded);
+                                        }
+
+                                        function loaded() {
+                                            // bind to the submit event of our form
+                                            var forms = document.querySelectorAll("form.gform");
+                                            for (var i = 0; i < forms.length; i++) {
+                                                forms[i].addEventListener("submit", handleFormSubmit, false);
+                                            }
+                                        };
+                                        document.addEventListener("DOMContentLoaded", loaded, false);
+
+                                        function disableAllButtons(form) {
+                                            var buttons = form.querySelectorAll("button");
+                                            for (var i = 0; i < buttons.length; i++) {
+                                                buttons[i].disabled = true;
+                                            }
+                                        }
+                                    })();
+                                </script>
+                                <div class="form-group m-0">
+                                    <button id="btnSubmit" class="btn-submit mt-1 btn btn-outline-secondary btn-sm" >문의 보내기</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="customerEmailAddress" class="visually-hidden">이메일 주소</label>
-                            <input id="customerEmailAddress" type="text" class="form-control" placeholder="이메일 주소">
-                        </div>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="customerSentence" class="visually-hidden">문의 내용</label>
-                            <input id="customerSentence" type="text" class="form-control" placeholder="문의 내용">
-                        </div>
-                        <div style="text-align: right; padding-right: 10px">
-                            <button class="btn btn-primary" type="button">등록</button>
+
+                        <div style="display:none" class="thankyou_message">
+                            <h6 style="font-size: 15px"><em>문의 남겨주셔서 감사합니다. <br></em>확인 후 빠른 시일 내로 회신드리겠습니다.</h6>
                         </div>
                     </form>
                 </div>
-            </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-                </ul>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                </div>
             </div>
         </footer>
     </div>
